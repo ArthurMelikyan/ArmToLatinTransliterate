@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="http://arthdev.epizy.com/latin.png"> 
+    <meta property="og:image:type" content="image/png"> 
+    <meta property="og:title" content="Armenian to latin converter" />
+    <title>transliterate</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #00c9ff;
+            background: -webkit-linear-gradient(to right, #00c9ff, #92fe9d);
+            background: linear-gradient(to right, #00c9ff, #92fe9d);
+        }
+    </style>
+    <div class="container">
+        <div class="red col-md-10 col-md-push-1">
+            <h2>Հայատառից՝ լատինատառ գեներատոր</h2>
+
+            <form id="ajax-contact" method="post" action="transliterate.php">
+                <div class="form-group">
+                    <label for="name">Գրեք հայատառ տեքստ դեպի լատինատառ կոնվերտացնելու համար:</label>
+                    <input type="text" class="form-control form-control-lg" id="name" name="resval" required>
+                </div>
+
+                <button type="submit" class="btn btn-success">Գեներացնել</button>
+            </form>
+            <br>
+     <div class="alert alert-info">
+        <h4>script֊ի կոռեկտ աշխատանքի համար օգտագործեք միայն հայերեն սիմվոլներ</h4>
+     </div>
+        </div>
+    </div>
+    <script src="./script.js">
+    </script>
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">By Arth</h1>
+</body>
+
+</html>
